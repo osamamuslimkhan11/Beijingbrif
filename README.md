@@ -115,3 +115,279 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Beijing Brief</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Beijing Brief</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#politics">Politics</a></li>
+                <li><a href="#business">Business</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#dailylife">Daily Life</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h2>About Beijing Brief</h2>
+        <p>Beijing Brief is your trusted source for the latest news, insights, and updates from China’s capital. We cover politics, business, culture, and daily life, providing in-depth reporting and analysis to keep you informed.</p>
+        <p>Our mission is to deliver accurate, timely, and engaging content that reflects the dynamic spirit of Beijing.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Beijing Brief. All rights reserved.</p>
+    </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Beijing Brief</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Beijing Brief</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#politics">Politics</a></li>
+                <li><a href="#business">Business</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#dailylife">Daily Life</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Beijing Brief. All rights reserved.</p>
+    </footer>
+</body>
+</html>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #f4a261;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e76f51;
+}
+
+.news-section, .categories, .about, .contact {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-section h2, .categories h2, .about h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.news-grid, .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.news-card, .category-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.read-more {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: #e76f51;
+}
+
+footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-section {
+    margin: 1rem;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #f4a261;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}document.addEventListener('DOMContentLoaded', () => {
+    // Newsletter Form Submission
+    const newsletterForm = document.getElementById('newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for subscribing to Beijing Brief!');
+            newsletterForm.reset();
+        });
+    }
+
+    // Contact Form Submission
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Your message has been sent!');
+            contactForm.reset();
+        });
+    }
+});
